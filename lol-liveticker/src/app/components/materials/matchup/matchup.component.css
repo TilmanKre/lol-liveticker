@@ -1,0 +1,35 @@
+.matchupWrapper {
+  display: flex;
+  align-items: center;
+  border: 3px solid var(--color-contrast-light);
+  border-radius: 25px;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+p {
+  font-size: xx-large;
+  color: var(--color-contrast-light);
+}
+
+.divider {
+  height: 2px;
+  background-color: var(--color-accent);
+  margin: 15px;
+  width: 100%;
+}
+
+.teamWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10%;
+}
+
+img {
+  height: 90%;
+}
+
+h3 {
+  font-size: xx-large;
+}

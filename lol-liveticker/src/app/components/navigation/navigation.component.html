@@ -1,12 +1,20 @@
 <nav class="mainNav">
-  <h2>lol-liveticker</h2>
-  <mat-button-toggle-group>
-    <mat-button-toggle value="light" aria-label="Light Mode" (click)="makeLight()">
-      <mat-icon color="primary">wb_sunny</mat-icon>
-    </mat-button-toggle>
-    <mat-button-toggle value="dark" aria-label="Dark Mode" (click)="makeDark()">
-      <mat-icon color="primary">brightness_3</mat-icon>
-    </mat-button-toggle>
-  </mat-button-toggle-group>
+  <h2 routerLink="/">lol-liveticker</h2>
+  <div class="right">
+    <div class="menu">
+      <a routerLink="/">Games</a>
+      <a routerLink="/">Teams</a>
+      <a routerLink="/">News</a>
+      <a routerLink="/">About</a>
+    </div>
+    <mat-button-toggle-group>
+      <mat-button-toggle value="light" aria-label="Light Mode" (click)="makeLight()">
+        <mat-icon color="primary">wb_sunny</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle value="dark" aria-label="Dark Mode" (click)="makeDark()">
+        <mat-icon color="primary">brightness_3</mat-icon>
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
 </nav>
 

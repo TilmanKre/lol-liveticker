@@ -9,12 +9,14 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
+import { MatchupComponent } from './components/materials/matchup/matchup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavigationComponent
+    NavigationComponent,
+    MatchupComponent
   ],
   imports: [
     BrowserModule,

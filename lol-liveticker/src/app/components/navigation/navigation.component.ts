@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent {
+
+  constructor() {
+    this.makeDark()
+  }
+
   makeLight(){
     document.documentElement.setAttribute('data-theme', "light")
   }
