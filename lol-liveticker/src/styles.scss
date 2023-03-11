@@ -1,0 +1,50 @@
+@use '@angular/material' as mat;
+
+@import "custom-theme";
+
+/* Base Colors */
+:root {
+  --color-main:white;
+  --color-contrast:black;
+  --color-contrast-light: #6c6c6c;
+  --color-accent: #4454d9;
+}
+
+[data-theme="dark"]{
+  --color-main:black;
+  --color-contrast:white;
+  --color-contrast-light: #a4a4a4;
+  --color-accent: #7a44a9;
+  @include mat.all-component-colors($dark-theme);
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transform-box: border-box;
+}
+
+a {
+  color: var(--color-contrast);
+}
+
+a:hover{
+  color: var(--color-accent);
+}
+
+a:active {
+  color: var(--color-accent);
+}
+
+h1, h2, h3, h4, h5, h6, p, html, body, div {
+  color: var(--color-contrast);
+}
+
+html, body {
+  background-color: var(--color-main);
+}
+
+html, body { padding-top: 40px}
+body { margin: 0;  font-family: Tahoma, sans-serif; }

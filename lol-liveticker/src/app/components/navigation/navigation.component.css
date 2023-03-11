@@ -1,0 +1,31 @@
+.mainNav {
+  position: fixed;
+  top: 0;
+  width: 96%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px var(--color-accent) solid;
+  justify-content: space-between;
+  padding: 0 2%;
+  background-color: var(--color-main);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: xx-large;
+}
+
+a {
+
+}
