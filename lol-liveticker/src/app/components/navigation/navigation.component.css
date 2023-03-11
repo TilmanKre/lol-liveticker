@@ -1,6 +1,12 @@
 .mainNav {
   height: 80px;
-  box-shadow: 0px 5px 5px 2px lightgray;
   display: flex;
   align-items: center;
+  border-bottom: 1px var(--color-accent) solid;
+  justify-content: space-between;
+  padding: 0 1%;
+}
+
+mat-icon {
+
 }

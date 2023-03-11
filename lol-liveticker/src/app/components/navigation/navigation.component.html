@@ -1,15 +1,12 @@
 <nav class="mainNav">
-  <p>lol-liveticker</p>
-  <mat-button-toggle-group #themeGroup="matButtonToggleGroup">
-    <mat-button-toggle value="light" aria-label="Text align left">
+  <h2>lol-liveticker</h2>
+  <mat-button-toggle-group>
+    <mat-button-toggle value="light" aria-label="Light Mode" (click)="makeLight()">
       <mat-icon color="primary">wb_sunny</mat-icon>
     </mat-button-toggle>
-    <mat-button-toggle value="dark" aria-label="Text align center">
-      <mat-icon>brightness_3</mat-icon>
+    <mat-button-toggle value="dark" aria-label="Dark Mode" (click)="makeDark()">
+      <mat-icon color="primary">brightness_3</mat-icon>
     </mat-button-toggle>
   </mat-button-toggle-group>
-  <div class="example-selected-value">Selected value: {{themeGroup.value}}</div>
-  <button mat-raised-button color="primary">Basic</button>
-
 </nav>
 
